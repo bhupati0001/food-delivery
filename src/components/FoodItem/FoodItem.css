@@ -13,7 +13,7 @@
   position: relative;
 }
 .foodItem-img-container img {
-  width: 200px;
+  width: 100%;
   height: auto;
   border-radius: 15px;
   display: block;
