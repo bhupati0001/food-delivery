@@ -1,0 +1,40 @@
+.explore-menu {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.explore-menu h1 {
+  color: tomato;
+  font-weight: 500;
+}
+
+.explore-menu-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.explore-menu-item {
+  text-align: center;
+}
+
+.explore-menu-item img {
+  border-radius: 50%;
+  width: 120px;
+  position: relative;
+}
+
+.explore-menu-item img:active {
+  transform: rotate(4deg);
+}
+
+.active-menu-item {
+  border: 1px solid tomato;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+}

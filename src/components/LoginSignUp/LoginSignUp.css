@@ -1,0 +1,134 @@
+.login-signup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.login-signup-form-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  transform: translateY(-20px);
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.login-signup-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: tomato;
+}
+
+.login-signup-form-container img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.login-signup-form-container img:active {
+  transform: rotate(90deg);
+}
+
+.login-signup-form input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.login-signup-form input:focus {
+  border-color: tomato;
+  outline: none;
+}
+
+.login-signup-form button {
+  width: 100%;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-signup-form button:hover {
+  background-color: #e05b48;
+}
+
+.term-condition-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.term-condition-container input[type="checkbox"] {
+  margin-right: 8px;
+  margin-top: 13px;
+  accent-color: tomato;
+}
+
+.term-condition-container label {
+  flex: 1;
+  line-height: 1;
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.login-signup-form-container p {
+  font-size: 14px;
+  color: #555;
+}
+
+.login-signup-form-container p span {
+  color: tomato;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+
+.login-signup-form-container p span:hover {
+  color: #e05b48;
+}
+
+.create-or-signUp-statement {
+  margin-top: 10px;
+}

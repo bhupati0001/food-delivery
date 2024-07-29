@@ -1,0 +1,118 @@
+.food-item {
+  max-width: 250px;
+  background-color: azure;
+  border-radius: 15px;
+  box-shadow: 0 0 5px black;
+  cursor: pointer;
+}
+
+.food-item:hover {
+  scale: 1.01;
+}
+.foodItem-img-container {
+  position: relative;
+}
+.foodItem-img-container img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+.food-item-info {
+  padding: 10px;
+}
+
+.food-item-name-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.food-item-name-rating p {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.food-item-name-rating img {
+  width: 80px;
+  height: auto;
+}
+
+.food-item-desc {
+  text-align: left;
+  font-size: smaller;
+  margin-top: 10px;
+}
+
+.food-item-price {
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: tomato;
+}
+
+.food-item-price::before {
+  content: "\20B9";
+  font-size: 1em;
+  font-weight: 600;
+  color: tomato;
+  margin-right: 3px;
+}
+
+.plus {
+  position: absolute;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  right: 10px;
+  bottom: 10px;
+  font-size: 2em;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  user-select: none;
+}
+.counter span {
+  display: block;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 135px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+span.minus {
+  background-color: rgb(245, 211, 211);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 2em;
+  color: rgb(255, 0, 0);
+  padding-bottom: 2px;
+  user-select: none;
+}
+span.add {
+  background-color: rgb(197, 243, 185);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.8em;
+  color: rgb(39, 109, 28);
+  padding-bottom: 2px;
+  user-select: none;
+}
+
+span.value {
+  font-size: 1.2em;
+  user-select: none;
+}
